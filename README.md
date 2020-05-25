@@ -8,3 +8,4 @@ cd linux_webpage/
 npm i
 npm start
 ```
+Su sistemi windows bisogna cambiare le slash con backslash / -> \ nei percorsi

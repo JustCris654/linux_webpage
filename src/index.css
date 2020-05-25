@@ -11,3 +11,239 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+body {
+  background-color: #262526;
+  color: azure;
+}
+
+html[data-theme='dark'] {
+  --text-color-normal: rgb(233, 233, 233);
+  --text-color-light: hsl(212, 15%, 41%);
+  --text-color-richer: hsl(202, 58%, 61%);
+  --text-color-highlight: hsl(25, 70%, 45%);
+}
+
+.title {
+  text-align: center;
+  font-size: 50px;
+  color: rgb(1, 1, 172);
+  text-shadow: 1px 1px aliceblue;
+  transform: translateY(-190%);
+}
+
+.welcome-header {
+  text-align: center;
+  color: rgb(159, 211, 253);
+  letter-spacing: 0.5rem;
+}
+
+.opening-paragraph {
+  text-align: center;
+}
+
+.logo-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70%;
+  max-height: 70%;
+}
+
+.tags {
+  color: rgb(247, 128, 128);
+}
+
+h2 {
+  color: rgb(71, 71, 255); 
+  text-align: center;
+}
+
+.img-unixporn{
+  display: block;
+  max-width: 480px; 
+  max-height: 270px; 
+  width: auto; 
+  height: auto; 
+  margin-left: 30px;
+}
+
+:root{
+  --bg:           #1b1b1b;
+  --bg-accent:    #484a4d;
+  --text-color:   rgb(233, 233, 233);
+  --nav-size:       80px;
+  --border:         1px solid #474a4d;
+  --border-radius:  8px;
+  --speed:          500ms;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: rgb(233, 233, 233);
+  text-decoration: none;
+}
+
+table, th, tr, td{
+  border: 1px solid rgb(172, 206, 252);
+}
+
+h3{
+  color: rgb(250, 98, 98);
+}
+
+li {
+  margin-left: 30px;
+}
+
+ul {
+  margin-left: 30px;
+}
+
+/* Stile della navbar */
+.navbar {
+  height: 80px;
+  background-color: #1b1b1b;
+  padding: 0 1rem;
+  border-bottom: 1px solid #474a4d;
+}
+
+/* Stile della lista nella navbar */
+.navbar-list {
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Stile delle icone nella navbar */
+.navbar-item {
+  width: calc(var(--nav-size)* 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header{
+  text-align: center;
+}
+
+/* Stile bottone */
+.icon-button {
+  --button-size: calc(var(--nav-size)*0.4);
+  width: var(--button-size);
+  height: var(--button-size);
+  border-radius: 50%;
+  padding: 5px;
+  margin: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 300ms;
+}
+
+.icon-button:hover {
+  filter: brightness(1.5);
+}
+
+.icon-button svg {
+  scale: 250%;
+  width: 20px;
+  height: 20px;
+}
+
+/* Dropdown menu */
+
+.dropdown-menu {
+  position: absolute;
+  top: 76px;
+  width: 300px;
+  transform: translate(-45%);
+  background-color: var(--bg);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  overflow: hidden; /*Hide every child element that overlap this menu*/
+  transition: height var(--speed) ease;
+}
+
+.dropdownmenu-item {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-radius: background var(--border-radius);
+  padding: 0.5rem;
+}
+
+.dropdownmenu-item:hover {
+  background-color: #474747;
+}
+
+.icon-right {
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+}
+
+.menu-primary-enter {
+  position: absolute;
+  transform: translateX(-110%);
+}
+.menu-primary-enter-active {
+  transform: translateX(0%);
+  transition: all var(--speed) ease;
+}
+.menu-primary-exit {
+  position: absolute;
+}
+.menu-primary-exit-active {
+  transform: translateX(-110%);
+  transition: all var(--speed) ease;
+}
+
+.secondary-debian-enter {
+  transform: translateX(110%);
+}
+.secondary-debian-enter-active {
+  transform: translateX(0%);
+  transition: all var(--speed) ease;
+}
+.secondary-debian-exit {
+}
+.secondary-debian-exit-active {
+  transform: translateX(-110%);
+  transition: all var(--speed) ease;
+}
+
+.secondary-redhat-enter {
+  transform: translateX(110%);
+}
+.secondary-redhat-enter-active {
+  transform: translateX(0%);
+  transition: all var(--speed) ease;
+}
+.secondary-redhat-exit {
+}
+.secondary-redhat-exit-active {
+  transform: translateX(-110%);
+  transition: all var(--speed) ease;
+}
+
+.secondary-archlinux-enter {
+  transform: translateX(110%);
+}
+.secondary-archlinux-enter-active {
+  transform: translateX(0%);
+  transition: all var(--speed) ease;
+}
+.secondary-archlinux-exit {
+}
+.secondary-archlinux-exit-active {
+  transform: translateX(-110%);
+  transition: all var(--speed) ease;
+}
+

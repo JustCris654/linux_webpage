@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" type="text/css" href="../src/index.css">
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -29,15 +30,137 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <img src='images/archlinux_logo.png' alt='archlinux logo' class='logo-image'>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <h1 class='welcome-header'>Benvenuti nella home page di Arch Linux</h1>
+
+    <p class='opening-paragraph'>
+      ArchLinux is a linux distribution for computers. The ArchLinux
+      repositories contains both free and nonfree software.
+      ArchLinux adheres to five principles: simplicity, modernity, pragmatism,
+      user centrality and versatily.
+      <br>
+      <br>
+    </p>
+
+    <h2>Package Manager</h2>
+    <p>
+      A package manager written specifically for Arch Linux, Pacman,
+      is used to install, remove and update software packages.
+      Also ArchLinux is a rolling-disto, that means there are no major releases
+      of completely new version of the system but a regular system update
+      is all you need to get the latest Arch Software.
+  </p>
+
+  <a href='#distros' class='tags'>Popular arch based distros [go]</a><br><br>
+
+  <a href="https://it.wikipedia.org/wiki/Arch_Linux" style="color: #8bb0ff;">
+    -> Visit the wikipedia archlinux page <-
+</a>
+<h2>Pros of archlinux</h2>
+<p>
+    The strong point of an arch installation is customizability because after an arch fresh installation
+    you have nothing except for the os and the base packages.
+    You have to install all drivers, desktop environment, window manager, applications etc.
+</p>    
+<br><br>
+<h2>*NIX custom themes subreddit</h2>
+<p>
+    Here is a link to a reddit community where people upload their custom desktop and themes.
+</p>
+<a href='https://www.reddit.com/r/unixporn/'>
+    <img src='images/xthclk092jv41.png'
+         title='Reddit *nix custom desktop and themes subreddit'
+         class='img-unixporn'>
+</a>
+<p>
+    Last feature of ArchLinux is a well writed and complete documentation called ArchWiki.
+    This is a link for the archwiki:
+</p>
+<a href="https://wiki.archlinux.org/" style="color: #8bb0ff;">ArchWiki</a>
+
+    <h3>Popular windows managers</h3>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Written in</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>i3</td>
+            <td>C</td>
+            <td>One of the most popular wm</td>
+        </tr>
+        <tr>
+            <td>QTile</td>
+            <td>Python</td>
+            <td>A full-featured, hackable tiling window manager written and configured in Python</td>
+        </tr>
+        <tr>
+            <td>Awesome</td>
+            <td>Lua</td>
+            <td>One of the most customizable windows manager, its popular and has a pretty good documentation</td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <h3 id="distros">Arch based distros</h3>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Image</th>
+        </tr>
+        <tr>
+            <td>Manjaro</td>
+            <td>
+                <a href="https://manjaro.org/"><img src="./images/proxy-image.png"></a>
+            </td>
+        </tr>
+        <tr>
+            <td>Endeavour Os</td>
+            <td>
+                <a href="https://endeavouros.com/"><img src="./images/endeavouros.png"></a>
+            </td>
+        </tr>
+        <tr>
+            <td>Arch Linux</td>
+            <td>
+                <a href="https://www.archlinux.org/"><img src="./images/archlinux_pure.png" style="width: 20%;"></a>
+            </td>
+        </tr>
+    </table>
+
+    <h3>Best linux DE/WM in my opinion</h3>
+    <ol>
+        <li>Awesome</li>
+        <li>KDE Plasma</li>
+        <li>i3</li>
+        <li>Gnome</li>
+        <li>XFCE</li>
+    </ol>
+
+    <h3>Repository Arch Linux</h3>
+    <ul>
+        <li>Core</li>
+        <li>Extra</li>
+        <li>Multilib</li>
+        <li>Community</li>
+        <li>Testing</li>
+        <li>Community-testing</li>
+        <li>Multilib-testing</li>
+        <li>Gnome-unstable</li>
+        <li>Kde-unstable</li>
+        <li>AUR (Arch User Repository)</li>
+    </ul>
+
+    <br><br>
+     <!-- per l'icona del pinguino di linux in alto a destra devo citare il creatore -->
+  Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">
+    Freepik
+  </a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+
   </body>
+ 
 </html>

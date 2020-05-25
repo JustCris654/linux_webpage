@@ -1,7 +1,6 @@
 import { ReactComponent as LinuxIcon } from './icons/linux.svg' 
 
 import React, { useState } from 'react';
-import logo from './logo.svg';
 import { CSSTransition } from 'react-transition-group';
 
 

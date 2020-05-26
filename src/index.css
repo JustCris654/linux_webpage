@@ -89,12 +89,28 @@ a {
   text-decoration: none;
 }
 
-table, th, tr, td{
+table, th, tr{
   border: 1px solid rgb(172, 206, 252);
+  text-align: center;
+  width: auto;
+  margin-right: 30%;
+}
+
+td{
+  border: 1px solid rgb(172, 206, 252);
+}
+
+.arch-based-img {
+  width: 50%;
 }
 
 h3{
   color: rgb(250, 98, 98);
+  margin-left: 2.5%;
+}
+
+.tables-headers {
+  margin-left: 27%;
 }
 
 li {

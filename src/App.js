@@ -33,7 +33,8 @@ function NavbarItem(props) {
 
   return(
     <li className='navbar-item'>
-      <a href='#' className='icon-button' onClick={() => setOpen(!open)}>
+        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+      <a href={'#'} className='icon-button' onClick={() => setOpen(!open)}>
         {props.icon}
       </a>
 
@@ -56,6 +57,7 @@ function DropdownMenu() {
  
   function DropdownMenuItem(props){
     return(
+        // eslint-disable-next-line jsx-a11y/anchor-is-valid
       <a href='#' className='dropdownmenu-item' onClick={ () => props.goToMenu
       && setActiveMenu(props.goToMenu) }>
         <span className='icon-left'> {props.leftIcon}</span>

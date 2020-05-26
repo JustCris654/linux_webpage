@@ -166,11 +166,17 @@ ul {
   filter: brightness(1.5);
 }
 
-.icon-button svg {
-  scale: 250%;
-  width: 20px;
-  height: 20px;
+.icon-button {
+  width: 85%;
+  height: auto;
 }
+
+.icon-button svg {
+  /*scale: 250%; !*works on firefox, does not work on chromium*!*/
+  width: 100px;
+  height: auto;
+}
+
 
 /* Dropdown menu */
 
